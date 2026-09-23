@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9. Lao Tác</title>
+    <style>
+        /* Thiết lập nền vũ trụ cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.85); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 900px;
+            padding: 45px 55px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .quote-box {
+            margin: 25px 0;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #ffd700;
+            text-align: center;
+            font-family: serif;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>9. LAO TÁC</h2>
+        <div class="quote-box">
+            Những người chuyên tu sẽ lao tác quanh khu vực thất của mình như dọn cỏ, tỉa nhánh cây hoặc theo yêu cầu của Tri sự.<br><br>
+            Những người công quả sẽ thay phiên nhau làm việc trong nhà trù như Trị nhật, hành đường, và những công việc khác.<br><br>
+            Tri sự sẽ phân công cụ thể vào mỗi ngày.<br><br>
+            Phải siêng năng hoàn thành công việc được giao phó với tâm nguyện công quả phục vụ Đại chúng. Giữ đúng giờ giấc lao tác, trừ những trường hợp đặc biệt. Khi làm việc, Tu sĩ cần phải nhanh nhẹn, cẩn thận, chính xác.<br><br>
+            Giữ gìn dụng cụ kỹ lưỡng, không để mất mát, hư mục, đổ vỡ. Tiết kiệm tài sản Tự viện. Người trưởng nhóm phải phân công người lấy dụng cụ trước khi lao tác.<br><br>
+            Khi làm việc phải tu Chánh niệm, giữ tâm tỉnh giác thanh tịnh, luôn nhớ thân vô thường.<br><br>
+            Không được tự ý lấy đồ vật của viện cho người ngoài mượn, phải trình qua Ban Quản Viện.<br><br>
+            Không được tự ý nhờ người may vá, không được tự ý vay mượn bên ngoài, phải trình Ban Quản Viện. Ban Quản Viện cũng phải để ý nhu cầu của chúng để kịp thời giúp đỡ.<br><br>
+            Khi muốn mua sắm vật dụng cá nhân, Tu sĩ phải đến trình Ban Quản Viện mua giùm. Tùy theo quỹ của Tu viện nhiều hay ít mà Đại chúng sẽ san sẻ mức sống với nhau.<br><br>
+            Ý nghĩa lục hòa được hiểu một cách linh động. Người bệnh, người lao tác nặng được bồi dưỡng nhiều hơn; người thiếu y phục được may sớm hơn.<br><br>
+            Khi hẹn với ai phải đúng giờ hẹn, tốt nhất là đến trước giờ hẹn.<br><br>
+            Không được lấy của chung làm của riêng.<br><br>
+            Khi lao tác, Tăng, Ni, cư sĩ phải giữ khoảng cách nhất định, không đùa giỡn.<br><br>
+            <span class="highlight">Không nên đeo tai nghe khi lao tác. Sau khi lao tác, phân công người cất dọn dụng cụ lao động, đồ dùng bữa lỡ.</span>
+        </div>
+    </div>
+
+</body>
+</html>
