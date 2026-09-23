@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17. Thư Viện</title>
+    <style>
+        /* Thiết lập nền vũ trụ cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.85); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 900px;
+            padding: 45px 55px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .quote-box {
+            margin: 25px 0;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #ffd700;
+            text-align: center;
+            font-family: serif;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>17. THƯ VIỆN</h2>
+        <div class="quote-box">
+            Thư viện phải được xây ở nơi cao ráo, rộng rãi, thoáng khí. Kệ để băng đĩa, Kinh sách phải có chân cao khỏi mặt đất để tránh hơi ẩm từ dưới đất bốc trực tiếp lên, làm mau hư Kinh sách. Trong thư viện phải có bình cứu hỏa.<br><br>
+            Người giữ Thư viện phải có kỹ năng sơ đẳng về cứu hỏa. Không được mang những chất dễ gây cháy nổ vào Thư viện.<br><br>
+            Người giữ Thư viện phải hết lòng kính trọng Pháp, trân trọng những phương tiện chuyển tải Pháp như băng đĩa, Kinh sách... và phải giúp cho người đến mượn đọc cũng hiểu và thực hiện được điều này.<br><br>
+            Vào chỗ để Kinh sách, như vào chỗ có Phật, phải giữ vệ sinh thân thể sạch sẽ, trang nghiêm, không được làm ồn, đùa giỡn, nói chuyện phiếm, ngủ nghỉ. Không được bước qua Kinh sách, băng đĩa, hình Phật... Thường xuyên quét tước bụi bặm, tránh mối mọt, chuột bọ.<br><br>
+            Băng đĩa, Kinh sách được sắp xếp một cách ngăn nắp, khoa học và phải được quản lý bằng mã số để dễ tìm kiếm. Băng đĩa, Kinh sách có hình Phật, hình các vị Thánh thì phải để nơi cao ráo, trang trọng, không được để dưới đất, hoặc để chỗ quá thấp. Phải có sổ sách và phần mềm quản lý những băng đĩa, Kinh sách đã có, mới được nhập về, và mới được mượn đi.<br><br>
+            Kiểm kho Thư viện mỗi tháng một lần. Nếu thấy Kinh sách nào bị rách, long bìa... phải bọc lại, dán băng keo cẩn thận.<br><br>
+            Mỗi khi có Kinh sách mới về thì phải dán mã số, nhập thông tin vào sổ sách, cập nhật vào phần mềm, rồi sắp xếp vào chỗ thích hợp trên kệ. (Nếu có điều kiện thì nên bọc nylon cho Kinh sách trước khi sắp vào kệ, chứ không chờ đến khi thấy rách mới bọc).<br><br>
+            Nếu Kinh sách quá cũ, bị hư, mục... thì không được cho vào thùng rác mà phải đem đốt ở nơi sạch sẽ và phải bổ sung ngay đầu sách tương tự lên kệ, rồi nhập vào sổ sách và phần mềm.<br><br>
+            Trường hợp người mượn đọc Kinh sách tại chỗ, không được mang Kinh sách ra khỏi Thư viện. Ngồi đọc sách ngay ngắn, không gác chân lên ghế, không gác một chân. Không gấp trang sách, không làm quăn bìa sách, không làm bẩn sách... Đọc sách xong để lại đúng vị trí, sắp xếp ngay ngắn, gọn gàng.<br><br>
+            Trường hợp người xem, nghe đĩa tại chỗ (với những Tự viện có điều kiện trang bị dàn máy tính có tai nghe riêng cho từng máy), không được bật loa lớn tiếng, không được nghe headphone rồi hát theo điệu nhạc đang nghe, hoặc phát ra tiếng cảm xúc “ồ, à...” quá lớn, hoặc cười rung mình bần bật, cười ngả nghiêng, cười khúc khích thành tiếng khi nghe Pháp. Cần phải ngồi ngay ngắn, trang nghiêm, giữ trật tự. Xem, nghe đĩa xong cũng phải để lại đúng vị trí cũ.<br><br>
+            <span class="highlight">Trường hợp người mượn về nhà, nên lưu ý: để Kinh sách ở nơi cao ráo và không được nằm hướng chân về phía đó. Phải trân trọng giữ gìn và trả đúng hẹn.</span>
+        </div>
+    </div>
+
+</body>
+</html>

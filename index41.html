@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22. Giải Tội</title>
+    <style>
+        /* Thiết lập nền vũ trụ cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.85); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 900px;
+            padding: 45px 55px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .quote-box {
+            margin: 25px 0;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #ffd700;
+            text-align: center;
+            font-family: serif;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>22. GIẢI TỘI</h2>
+        <div class="quote-box">
+            Tùy theo mức độ vi phạm mà Tu sĩ sẽ chịu một hình thức giải tội do Trụ trì quyết định.<br><br>
+            <strong>a) Sám Hối Đại Chúng</strong><br>
+            Sau khi được Trụ trì phân tích chỉ lỗi, người có lỗi sẽ sám hối trước Đại Chúng trong buổi phát lồ. Đây là những lỗi nhỏ nhặt.<br><br>
+            <strong>b) Đổi Trách Nhiệm</strong><br>
+            Nếu sau ba lần vẫn phạm lỗi nhỏ, Tu sĩ sẽ được Trụ trì đổi sang trách nhiệm khác. Vẫn sám hối Đại chúng mỗi kỳ cho đến khi Trụ trì cho phép dừng lại. Nếu lỗi nặng hơn, chỉ một lần phạm thì sẽ được đổi qua trách nhiệm khác.<br><br>
+            <strong>c) Trở Lại Giai Đoạn Cũ</strong><br>
+            Nếu người chuyên tu phạm lỗi nặng, sẽ được đưa trở lại giai đoạn dự bị để công quả rèn luyện lại. Tuy nhiên, vẫn sám hối Đại chúng.<br>
+            Nếu người ở giai đoạn dự bị phạm lỗi nặng, sẽ chuyển ra ở nhà khách để làm khách công quả trong thời gian nửa tháng và vẫn sám hối Đại chúng mỗi chiều.<br>
+            Nếu ở giai đoạn khách công quả mà vẫn không tu sửa, sẽ phải rời viện.<br><br>
+            <span class="highlight">d) Tẩn Xuất<br>
+            Nếu phạm trọng Giới hoặc nhiều lần phạm lỗi khác, người này lập tức bị tẩn xuất dù đang ở giai đoạn nào.</span>
+        </div>
+    </div>
+
+</body>
+</html>

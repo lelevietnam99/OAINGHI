@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18. Y Cụ</title>
+    <style>
+        /* Thiết lập nền vũ trụ cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.85); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 900px;
+            padding: 45px 55px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .quote-box {
+            margin: 25px 0;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #ffd700;
+            text-align: center;
+            font-family: serif;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>18. Y CỤ</h2>
+        <div class="quote-box">
+            Theo truyền thống mỗi Tỳ Kheo có ba Y, một bình bát. Tuy nhiên đó là hình thức Ấn Độ của Phật. Nếu Phật ra đời ở một quốc gia khác thì y phục truyền thống của đạo Phật lại tùy theo quốc gia đó.<br><br>
+            Y phục Phật giáo có 3 tính chất:<br>
+            - Che thân thể kín đáo và giữ thân thể ấm áp.<br>
+            - Khác với thế tục.<br>
+            - Nhắc lại hình tướng của Phật<br><br>
+            Không được rời Y xa mình, nhất là không được để rời Y qua đêm. Y phải được để trên cao và xem như một biểu tượng thiêng liêng của đời sống Tu sĩ. Không để Y nơi thấp, không để Y bị rách, bị dơ, cháy xém, để rơi.<br><br>
+            Hình thức bộ đồ vạt nẻ của Tu sĩ Việt Nam có nhiều ưu điểm, vừa giống bộ bà ba của dân tộc, vừa khác thế tục, vừa thuận tiện gọn gàng cho sinh hoạt. Tuy nhiên, có việc lễ nghi trang trọng thì Tu sĩ mặc thêm áo tràng và đắp Y vàng, đi đường mặc áo tràng đà (Tăng), lam (Ni).<br><br>
+            Ba màu vẫn thường được dùng cho đạo Phật Á Đông là vàng, lam và đà. Người Ni dùng màu lam, đắp Y vàng. Nếu ai có nhiều dư dùng thì trả lại cho Ban Quản Viện để chia đều cho huynh đệ.<br><br>
+            Mỗi người có đồng hồ riêng để theo dõi thời khóa của mình.<br><br>
+            Ngoài ra, mỗi người có riêng xà bông tắm, kem chải răng.<br><br>
+            Tu sĩ được giữ một ít sách vở, tài liệu để học giáo lý, y học. Tài liệu học phải được Sư Phụ cho phép.<br><br>
+            Ngoài những vật dụng cá nhân cần thiết, còn lại, Tu sĩ nên giao qua Tri sự để sử dụng chung cho Tu viện như xe cộ, máy móc, Kinh sách khác.<br><br>
+            <span class="highlight">Không dùng đồ trang sức như tràng hoa, đồ vàng bạc. Không mang giày dép bằng da thú vật. Được dùng loại giả da, nhưng đừng có vẻ sang trọng, đẹp đẽ. Không nên dùng quần áo với vải sang trọng bóng loáng. Không nên mặc quần áo đắp vá nhiều màu kỳ cục; không mặc quần áo dơ bẩn hôi hám. Không dùng xà bông quá thơm hoặc xức nước hoa. Không tỉa lông mày.</span>
+        </div>
+    </div>
+
+</body>
+</html>

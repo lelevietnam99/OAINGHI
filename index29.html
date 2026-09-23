@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12. Đồng Cư</title>
+    <style>
+        /* Thiết lập nền vũ trụ cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.85); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 900px;
+            padding: 45px 55px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .quote-box {
+            margin: 25px 0;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #ffd700;
+            text-align: center;
+            font-family: serif;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>12. ĐỒNG CƯ</h2>
+        <div class="quote-box">
+            Những người công quả sẽ ở chung trong một Tăng đường. Hoặc người Ni, dù chuyên tu cũng vẫn ở chung bốn người một căn nhà. Vì thế, phải tuân thủ Luật nghi về sự đồng cư.<br><br>
+            Dù ở chung, vẫn phải giữ gìn sự tu hành như ở một mình. Khi cần thiết phải nói với huynh đệ, nên nói nhỏ và nói ngắn gọn, rồi trở về chỗ của mình. Không được quấy rầy huynh đệ, phải tôn trọng sự tu hành của huynh đệ.<br><br>
+            Không được nói chuyện khi có người đang ngồi thiền.<br><br>
+            Không được gây tiếng động lớn khi uống nước, giở đơn, đặt đồ vật, đóng cửa.<br><br>
+            Khi nhặt được của rơi, phải tìm trả lại cho người mất. Muốn mở đèn hoặc tắt đèn phải hỏi ý huynh đệ.<br><br>
+            Lúc vắng người nên tranh thủ quét lau nhà, bỏ rác vào thùng. Khi thùng đầy, tự giác mang đi đổ đúng nơi quy định.<br><br>
+            Nếu không phải ngày mưa dầm, không cần hong quần áo còn ướt, thì phải xếp gọn quần áo cất vào đơn, không nên treo la liệt quanh nhà.<br><br>
+            Nếu không có trách nhiệm, không được đi đến thất của người chuyên tu khác, không được sang liêu phòng của người khác, cũng không được mời gọi người khác đến liêu phòng, tịnh thất của mình.<br><br>
+            Trong Tăng đường có người bệnh, phải hết lòng săn sóc đỡ đần như báo Khán bệnh, lấy cháo, canh giờ cho uống thuốc, giặt giùm quần áo...<br><br>
+            Những người chuyên tu của Tăng ở riêng từng thất, không được đi lại chuyện vãn. Chỉ gặp nhau trao đổi việc cần thiết trong vài lời ngắn gọn mà thôi, rồi trở về thất mình. Tuy nhiên, cũng phải để ý xem những huynh đệ gần bên có gì bất trắc để hỗ trợ kịp thời.<br><br>
+            Theo tinh thần hỗ tương, Tăng có bổn phận bảo vệ Ni. Trong đêm hôm, nếu nghe có báo động từ trong Tăng hoặc từ bên Ni, để vài người giữ Tăng đường, còn lại đi nhanh sang tiếp ứng.<br><br>
+            Trong tinh thần đồng cư của Tu viện, Tu sĩ phải sống hòa với Đại chúng trong tinh thần Vô ngã, không nên làm ra vẻ khác biệt, lập dị, tách rời với mọi người, trừ trường hợp đặc biệt như công việc bất ngờ v.v... Đừng để mọi người bận tâm vì mình như có thái độ khác lạ, mặc cảm, hờn dỗi...<br><br>
+            Khi huynh đệ đi công tác xa dài ngày, những huynh đệ ở chung liêu phải có trách nhiệm hong phơi mùng mền quần áo khô và gấp gọn gàng đồ dùng của người đó vào đơn.<br><br>
+            <span class="highlight">Khi biết huynh đệ về khuya phải trải đơn, giăng mùng cho huynh đệ.</span>
+        </div>
+    </div>
+
+</body>
+</html>
