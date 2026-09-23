@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Ăn Uống - a. Nhà Trù</title>
+    <style>
+        /* Thiết lập nền vũ trụ cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.85); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 900px;
+            padding: 45px 55px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .quote-box {
+            margin: 25px 0;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #ffd700;
+            text-align: center;
+            font-family: serif;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>1. ĂN UỐNG<br><span style="font-size: 1.2rem; font-weight: normal;">a. Nhà Trù</span></h2>
+        <div class="quote-box">
+            Phải giữ cho nhà trù sạch sẽ, ngăn nắp. Phải có giàn phơi chén sau khi rửa. Phải có ống khói. Chỗ đứng nấu khác phía chỗ đun củi. Phải khéo léo sắp xếp để tiết kiệm chất đốt.<br><br>
+            Người Trị nhật nấu cơm phải giữ vệ sinh thân thể kỹ lưỡng; không vuốt ve chó, mèo; không để mồ hôi ướt ẩm rơi vãi; phải có kiến thức về y học điều dưỡng để giữ vệ sinh thực phẩm, tránh bụi bặm, nấm mốc lây lan, hâm nhiều lần, chuột, bọ... Trị nhật theo sự bố trí của Trưởng bếp để gia công nấu nướng. Phải nấu và hành đường dọn mâm vừa đủ ăn. Vì mỗi lần để đồ ăn dư là một lần lầm lỗi.<br><br>
+            Kho chứa thực phẩm phải được kiểm soát thường xuyên, tránh bị thối rữa, mục, ẩm mốc, hết hạn sử dụng.<br><br>
+            Nhà bếp phải đạt chuẩn vệ sinh quốc tế, không bao giờ có vết bẩn dưới sàn. Phải có một người suốt ngày đi tới đi lui lau vết bẩn. Rau củ còn dính đất không được đưa vào nhà bếp. Sàn rửa cũng không bao giờ có vết sinh bẩn. Hầu hết các khâu xử lý xắt, gọt, bóc... đều trên bàn cách xa mặt đất, nếu không ngồi thì đứng làm.<br><br>
+            Trưởng bếp phải biết sắp xếp bảo quản lưu trữ thực phẩm, sử dụng tủ đông tủ lạnh hợp lý để tiết kiệm điện.<br><br>
+            Tránh dùng nhiều bột ngọt, chất màu. Không dùng hàn the, các loại hóa chất. Không dùng dầu ăn chiên lại nhiều lần. Hạn chế sử dụng các món ăn nhiều dầu. Không sử dụng màng bọc thức ăn bừa bãi. Tri khố phải biết tổng quát dược tính của các món ăn để tránh các món độc. Biết cách kết hợp các món ăn để đảm bảo dinh dưỡng.<br><br>
+            Ngày thường nấu ăn đơn giản nhưng chu đáo kỹ lưỡng.<br><br>
+            Phân rác thành 6 loại: rác phân hủy, rác không phân hủy, kim loại, thủy tinh vỡ, bán phế liệu, quần áo cũ và thiết bị điện tử bỏ đi.
+        </div>
+    </div>
+
+</body>
+</html>
